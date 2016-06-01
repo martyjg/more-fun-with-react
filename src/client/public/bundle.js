@@ -57,6 +57,14 @@
 	
 	var _reactDom = __webpack_require__(/*! react-dom */ 38);
 	
+	var _awesomeComponent = __webpack_require__(/*! ./awesomeComponent.jsx */ 168);
+	
+	var _awesomeComponent2 = _interopRequireDefault(_awesomeComponent);
+	
+	var _socialMedia = __webpack_require__(/*! ./socialMedia.jsx */ 170);
+	
+	var _socialMedia2 = _interopRequireDefault(_socialMedia);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -85,7 +93,9 @@
 	                    'h1',
 	                    null,
 	                    'This is crazy I am writing shit in a react way'
-	                )
+	                ),
+	                _react2.default.createElement(_awesomeComponent2.default, null),
+	                _react2.default.createElement(_socialMedia2.default, null)
 	            );
 	        }
 	    }]);
@@ -20863,6 +20873,324 @@
 	var ReactMount = __webpack_require__(/*! ./ReactMount */ 160);
 	
 	module.exports = ReactMount.renderSubtreeIntoContainer;
+
+/***/ },
+/* 168 */
+/*!*********************************************!*\
+  !*** ./src/client/app/awesomeComponent.jsx ***!
+  \*********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _workDropdown = __webpack_require__(/*! ./workDropdown.jsx */ 169);
+	
+	var _workDropdown2 = _interopRequireDefault(_workDropdown);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var AwesomeComponent = function (_React$Component) {
+	    _inherits(AwesomeComponent, _React$Component);
+	
+	    function AwesomeComponent() {
+	        _classCallCheck(this, AwesomeComponent);
+	
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(AwesomeComponent).apply(this, arguments));
+	    }
+	
+	    _createClass(AwesomeComponent, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                { className: 'nav_bar_container' },
+	                _react2.default.createElement(
+	                    'ul',
+	                    null,
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: '.' },
+	                            'Home'
+	                        )
+	                    ),
+	                    _react2.default.createElement(_workDropdown2.default, null),
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: './about' },
+	                            'About'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        'Links'
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return AwesomeComponent;
+	}(_react2.default.Component);
+	
+	exports.default = AwesomeComponent;
+
+/***/ },
+/* 169 */
+/*!*****************************************!*\
+  !*** ./src/client/app/workDropdown.jsx ***!
+  \*****************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactToggleDisplay = __webpack_require__(/*! react-toggle-display */ 171);
+	
+	var _reactToggleDisplay2 = _interopRequireDefault(_reactToggleDisplay);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var WorkDropdown = function (_React$Component) {
+	    _inherits(WorkDropdown, _React$Component);
+	
+	    function WorkDropdown(props) {
+	        _classCallCheck(this, WorkDropdown);
+	
+	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(WorkDropdown).call(this, props));
+	
+	        _this.state = { visible: false };
+	        _this.onSayHey = _this.onSayHey.bind(_this);
+	        _this.onSayBye = _this.onSayBye.bind(_this);
+	        return _this;
+	    }
+	
+	    _createClass(WorkDropdown, [{
+	        key: 'onSayHey',
+	        value: function onSayHey() {
+	
+	            console.log("heyyyy");
+	            this.setState({ visible: true });
+	        }
+	    }, {
+	        key: 'onSayBye',
+	        value: function onSayBye() {
+	
+	            console.log("cyaaa");
+	            this.setState({ visible: false });
+	        }
+	    }, {
+	        key: 'onLike',
+	        value: function onLike() {
+	            var newLikesCount = this.state.likesCount + 1;
+	            this.setState({ likesCount: newLikesCount });
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'li',
+	                { onMouseOver: this.onSayHey, onMouseLeave: this.onSayBye },
+	                'lol',
+	                _react2.default.createElement(
+	                    _reactToggleDisplay2.default,
+	                    { show: this.state.visible, className: 'hidden_list' },
+	                    _react2.default.createElement(
+	                        'ul',
+	                        null,
+	                        _react2.default.createElement(
+	                            'li',
+	                            null,
+	                            '4 SURE?'
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            null,
+	                            'INSTANT CRUSH'
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            null,
+	                            'SOMETHING'
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return WorkDropdown;
+	}(_react2.default.Component);
+	
+	exports.default = WorkDropdown;
+
+/***/ },
+/* 170 */
+/*!****************************************!*\
+  !*** ./src/client/app/socialMedia.jsx ***!
+  \****************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var SocialMedia = function (_React$Component) {
+	    _inherits(SocialMedia, _React$Component);
+	
+	    function SocialMedia() {
+	        _classCallCheck(this, SocialMedia);
+	
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(SocialMedia).apply(this, arguments));
+	    }
+	
+	    _createClass(SocialMedia, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "div",
+	                { className: "social_media_container" },
+	                _react2.default.createElement(
+	                    "span",
+	                    null,
+	                    "Insta"
+	                ),
+	                _react2.default.createElement(
+	                    "span",
+	                    null,
+	                    "Tweet"
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return SocialMedia;
+	}(_react2.default.Component);
+	
+	exports.default = SocialMedia;
+
+/***/ },
+/* 171 */
+/*!**********************************************!*\
+  !*** ./~/react-toggle-display/dist/index.js ***!
+  \**********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;'use strict';
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	function _typeof(obj) { return obj && typeof Symbol !== "undefined" && obj.constructor === Symbol ? "symbol" : typeof obj; }
+	
+	(function (root, factory) {
+		// Building component according to modularization strategy
+	
+		if (true) {
+			// AMD. Register as an anonymous module.
+			!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(/*! react */ 1)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+		} else if ((typeof exports === 'undefined' ? 'undefined' : _typeof(exports)) === 'object') {
+			// Node. Note that this does not work with strict
+			// CommonJS, but only CommonJS-like environments
+			// that support module.exports
+			module.exports = factory(require('react'));
+		} else {
+			// Browser globals (root is window)
+			root.ToggleDisplay = factory(React);
+		}
+	})(undefined, function (React) {
+		"use strict";
+	
+		function isDefined(val) {
+			return val != null;
+		}
+	
+		function shouldHide(props) {
+			var shouldHide = undefined;
+			if (isDefined(props.show)) {
+				shouldHide = !props.show;
+			} else if (isDefined(props.hide)) {
+				shouldHide = props.hide;
+			} else {
+				shouldHide = false;
+			}
+			return shouldHide;
+		}
+	
+		function ToggleDisplay(props) {
+			if (props.if === false) {
+				return React.createElement('noscript', null);
+				// return null // this used to work, now have to manually return <noscript>
+			}
+	
+			var style = {};
+			if (shouldHide(props)) {
+				style.display = 'none';
+			}
+			return React.createElement('span', _extends({ style: style }, props));
+		}
+	
+		ToggleDisplay.propTypes = {
+			hide: React.PropTypes.bool,
+			show: React.PropTypes.bool,
+			if: React.PropTypes.bool
+		};
+	
+		return ToggleDisplay;
+	});
+
 
 /***/ }
 /******/ ]);
